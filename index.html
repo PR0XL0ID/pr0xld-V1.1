@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR0XLD - Gaming Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://lh6.googleusercontent.com/yj86qfbuVJpUPMD8mZiYUw1KnVWDI6TgYw-jsgcR8sIxsLpcjEeXCKIOhSkOlzdfc6kpdHrad8r_xHkJRKNZo6E=w16383" alt="PR0XLD Logo">
+        <h1>PR0XLD</h1>
+        <div class="top-menu">
+            <a href="#" onclick="toggleLinksModal()">Links</a>
+            <a href="#" onclick="toggleProxyModal()">Proxy</a>
+            <a href="#" onclick="togglePartnerModal()">Partners</a>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search games..." oninput="filterGames()">
+            </div>
+            <div class="discord-section">
+                <p>JOIN OUR DISCORD FOR MORE LINKS</p>
+                <button class="discord-button" onclick="window.open('https://discord.gg/cv7FVeTvTM', '_blank')">PR0XLD DISCORD</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="game-container" id="gameContainer"></div>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div id="modal-content" class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2 id="modal-title">Game Title</h2>
+            <iframe id="game-iframe" src="" allowfullscreen></iframe>
+            <button class="fullscreen-btn" onclick="toggleFullscreen('game-iframe')">Fullscreen</button>
+        </div>
+    </div>
+
+    <!-- Proxy Modal -->
+    <div id="proxyModal" class="modal">
+        <div class="modal-content proxy-modal-content">
+            <span class="close" onclick="toggleProxyModal()">×</span>
+            <h2>Proxy List</h2>
+            <div class="proxy-card" onclick="openModal('https://ghcghkvgh.britishkidsforclimate.club/index.html', 'Art Class'); toggleProxyModal();">
+                <img src="https://ghcghkvgh.britishkidsforclimate.club/assets/images/icon.png" alt="Art Class">
+                <h3>Art Class</h3>
+            </div>
+            <div class="proxy-card" onclick="openModal('https://inboxproxy.laviewddns.com/', 'Asteroid'); toggleProxyModal();">
+                <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXet_F2SF_4RfLeTewN35SOFgw9JhX1oR8K1gYV0MjB8MK0tPzS3lgTjJ2hN6fsAgNcZufBn4uqhzAfE7aSEKkz0msmgeZ-Hx7bjxp23n2bvyLgk-gH2hdaoivzxvdxiWb0WTH2gJw?key=FXWfXzQs9xvU4EdswylSdMiw" alt="Asteroid">
+                <h3>Asteroid</h3>
+            </div>
+            <div class="proxy-card" onclick="openModal('https://glow.joaopedroreis.com', 'Emerald'); toggleProxyModal();">
+                <img src="https://i.ytimg.com/vi/-YwS0vO8qQg/hqdefault.jpg" alt="Emerald">
+                <h3>Emerald</h3>
+            </div>
+            <div class="proxy-card proxy-card-rummerhead" onclick="openModal('https://educational-math-classes.jdx3.org', 'Rummerhead', true); toggleProxyModal();">
+                <img src="https://th.bing.com/th/id/OIP.Yy-jUoK551N-VwASMUkLSwHaHa?w=176&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Rummerhead">
+                <h3>Rummerhead</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partner Modal -->
+    <div id="partnerModal" class="modal">
+        <div class="modal-content proxy-modal-content">
+            <span class="close" onclick="togglePartnerModal()">×</span>
+            <h2>Partners</h2>
+            <div class="partner-card" onclick="window.open('https://pr0xime.w3spaces.com', '_blank')">
+                <img src="https://i.ibb.co/SBMyMJk/IG5-J0n-Jt6rop-O5p-ZIe-F7hq-Qo-N8i-BEu-Tq-Ty4h-MHUtp89-B9ox-JA.webp" alt="PR0XIME">
+                <h3>PR0XIME</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links Modal -->
+    <div id="linksModal" class="modal">
+        <div class="modal-content links-modal-content">
+            <span class="close" onclick="toggleLinksModal()">×</span>
+            <h2>Links</h2>
+            <div class="links-card" onclick="window.open('https://pr0xl0id.github.io/pr0x/', '_blank')">
+                <h3 style="color: #FF5733;">https://pr0xl0id.github.io/pr0x/</h3>
+            </div>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 PR0XLD. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
